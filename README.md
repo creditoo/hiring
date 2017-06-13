@@ -30,3 +30,5 @@ Install the dependencies and run
 ```
 $ composer install && php artisan serve
 ```
+
+Now you can point your browser to http://localhost:8000 and see the application working.
