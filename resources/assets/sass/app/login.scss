@@ -1,0 +1,29 @@
+.login {
+
+  .vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+
+  .title {
+    color: #295192;
+  }
+
+  .app-box-container {
+    max-width: 600px;
+  }
+
+  .app-box {
+    background-color: #295192;
+    padding: 30px;
+
+    p {
+      color: white;
+      font-size: 20px;
+    }
+
+  }
+
+}

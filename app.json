@@ -1,0 +1,6 @@
+{
+  "name": "Creditoo Test",
+  "description": "Creditoo Test is an app build with Laravel 5.4 that show your Github profile",
+  "repository": "https://git.heroku.com/creditoo-test.git",
+  "addons": []
+}

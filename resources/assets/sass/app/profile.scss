@@ -1,0 +1,58 @@
+.profile {
+
+  .navbar-default {
+    background-color: #F9C623;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+  }
+
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #ecaa1f;
+    color: #000;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: #295192;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #295192;
+  }
+
+  .navbar-default .navbar-nav > li > a,
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #000;
+  }
+
+  .navbar-brand {
+    color: #295192;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .account {
+    background-color: #295192;
+    padding: 30px;
+  }
+
+  .image > div,
+  .form-group {
+    background-color: #F9C623;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .image,
+    .information {
+      margin-bottom: 30px;
+    }
+  }
+
+}
