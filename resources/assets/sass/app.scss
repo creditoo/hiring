@@ -1,9 +1,21 @@
-
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
-
-// Variables
-@import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Application
+@import "./app/login";
+@import "./app/profile";
+
+// Generic Styles
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#EEE, #FFF);
+}
+
+.btn-warning {
+  background-color: #F9C623;
+  border: 0 none;
+  color: black;
+}
