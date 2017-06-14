@@ -45,15 +45,21 @@ $ composer install
 $ php artisan migrate
 ```
 
-7. Clear cache to prevent errors (repeat this step every time you update .env file)
+7. Generate an application key
+
+```
+$ php artisan key:generate
+```
+
+8. Clear cache to prevent errors (repeat this step every time you update .env file)
 ```
 $ php artisan cache:clear && composer dump-autoload
 ```
 
-8. Run
+9. Run
 
 ```
 $ php artisan serve
 ```
 
-9. Now you can point your browser to http://localhost:8000 and see the application working.
+10. Now you can point your browser to http://localhost:8000 and see the application working.
