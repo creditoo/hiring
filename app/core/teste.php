@@ -69,32 +69,34 @@ function geturl($url){
     curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; CrawlBot/1.0.0)');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_COOKIEJAR, $cookie);
-    curl_setopt($ch, CURLOPT_HEADER, true);
+    //curl_setopt($ch, CURLOPT_HEADER, true);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT , 5);
     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
     //curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-    curl_setopt($ch, CURLOPT_ENCODING, "");
+    //curl_setopt($ch, CURLOPT_ENCODING, "");
     curl_setopt($ch, CURLOPT_AUTOREFERER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);    # required for https urls
-    curl_setopt($ch, CURLOPT_MAXREDIRS, 15);     
+    curl_setopt($ch, CURLOPT_MAXREDIRS, 15);         
 
 $html = curl_exec($ch);
 $status = curl_getinfo($ch);
 curl_close($ch);
 
-// if($status['http_code']!=200){
-//     if($status['http_code'] == 301 || $status['http_code'] == 302) {
-//         list($header) = explode("\r\n\r\n", $html, 2);
-//         $matches = array();
-//         preg_match("/(Location:|URI:)[^(\n)]*/", $header, $matches);
-//         $url = trim(str_replace($matches[1],"",$matches[0]));
-//         $url_parsed = parse_url($url);
-//         return (isset($url_parsed))? geturl($url):'';
-//     }
-// }
+if($status['http_code']!=200){
+    if($status['http_code'] == 301 || $status['http_code'] == 302) {
+        list($header) = explode("\r\n\r\n", $html, 2);
+        $matches = array();
+        preg_match("/(Location:|URI:)[^(\n)]*/", $header, $matches);
+        $url = trim(str_replace($matches[1],"",$matches[0]));
+        $url_parsed = parse_url($url);
+        return (isset($url_parsed))? geturl($url):'';
+    }
+}
 return $html;
 }
 
 
-echo geturl($url);
+$teste = json_decode(geturl($url));
+var_dump($teste->company);
+
 ?>
