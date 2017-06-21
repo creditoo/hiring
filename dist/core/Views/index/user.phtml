@@ -1,0 +1,47 @@
+		
+        <div class="account-info col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="account-img">
+                <img src="<?=$this->view->user->avatar_url;?>" alt="<?=$this->view->user->name;?>" class="img-responsive img-circle" />
+            </div>                          
+        </div>
+        <div class="account-bio col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <h3 class='account-name'>
+                <a href="<?=$this->view->user->html_url;?>" target="_blank">
+                    <?=$this->view->user->name;?>
+                </a>
+            </h3>
+            <div class="account-location">
+                <?=$this->view->user->location;?>
+            </div>
+            <div class="account-follows">
+                <div class="account-followers">
+                    <strong>Followers</strong>
+                    <span><?=$this->view->user->followers;?></span>
+                </div>
+                <div class="account-following">
+                    <strong>Following</strong>
+                    <span><?=$this->view->user->following;?></span>
+                </div>
+            </div>
+            <div class="account-publics">
+                <div class="account-public-repos">
+                    <strong>Repositories</strong>
+                    <span><?=$this->view->user->public_repos;?></span>
+                </div>
+                <div class="account-public-gists">
+                    <strong>Gists</strong>
+                    <span><?=$this->view->user->public_gists;?></span>
+                </div>
+            </div>
+            <div class="account-company">
+                <strong>Company: </strong>
+                <span><?=$this->view->user->company;?></span>
+            </div>
+            <div class="account-company">
+                <strong>Site: </strong>
+                <a href="<?=$this->view->user->blog;?>" target="_blank"><?=$this->view->user->blog;?></a>
+            </div>
+            <div class="account-bio">
+                <p>"<?=$this->view->user->bio;?>"</p>
+            </div>
+        </div>
