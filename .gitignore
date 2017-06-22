@@ -1,3 +1,4 @@
 /node_modules
-/vendor/
-!/vendor/Find
+/vendor/composer
+/vendor/autoload.php
+/bower_components
