@@ -70,7 +70,7 @@
 				   	data: { 'user_account': ipt },
 				   	success: function(data){        
 				    	elements.$result.html(data);
-				    	methods.saveStorage(data.data);
+				    	methods.saveStorage({'login': ipt});
 				   	}
 				});
 
@@ -141,6 +141,7 @@
 				let accountList = [];
 				if(localStorage.getItem("accounts"))
 					accountList = JSON.parse(localStorage.getItem("accounts"));	
+				
 				return accountList;
 			},
 			mountLast: function( list ){

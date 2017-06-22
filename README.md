@@ -1,3 +1,25 @@
+# What I used
+
+- HTML 5
+- CSS 3, Sass
+- Javascript, Jquery, ES6, Babel
+- PHP OO
+- Gulp
+- NPM, Composer, Bower
+
+
+# How to Work
+
+ - Clone this repo with git clone
+ - Open the dir *hiring* (cd hiring)
+ - Install de Node dependencies ( npm install)
+ - Install the composer dependencies (composer install)
+ - Run Gulp (gulp)
+
+
+
+
+
 # Hiring Creditoo
 
 Hello developer! 
