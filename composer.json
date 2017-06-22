@@ -1,0 +1,16 @@
+{
+    "name": "creditoo/hiring",
+    "description": "Test to creditoo, find a user account on github",
+    "authors": [
+        {
+            "name": "William Angélico",
+            "email": "willangelico@gmail.com"
+        }
+    ],
+    "autoload":{
+		"psr-4":{
+			"Find\\": "vendor/Find/",
+			"App\\": "dist/core/"
+		}
+	}
+}
