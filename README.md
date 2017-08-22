@@ -4,14 +4,16 @@ Hello developer!
 
 Do you want to work with us? If yes, *Fork* this repository, complete our test and open a PR with your code.
 
-Also, we need you to send us your resume to diogo@creditoo.com.br and, please, send all stuff you thing it's interesting about you too: linkedin, twitter, blog, site, github, open-source projects that you participate, articles that you have wrote, etc. Everything you judge good about you.
+Also, we need you to send us your resume to diogo@creditoo.com.br and, please, send all stuff you think it's interesting about you too: linkedin, twitter, blog, site, github, open-source projects that you participate, articles that you have wrote, etc. Everything you judge good about you.
 
 
 ## Requirements
 
-- PHP
+- PHP with Laravel 5.4
 - HTML5
 - CSS3
+- Angular 1 with ES6
+- Docker
 - Khow how to work with Linux
 - Khow how to work with GIT
 - Like to be challenged
@@ -32,5 +34,6 @@ Remember to comment the code and commits preferably in english and write the pro
 - Use Materialize or Bootstrap
 - Make an Ajax call
 - Responsive, functional and beautiful design (UX)
+- Show us that you can use Angular with Laravel, and have the skills to work with docker.
 
 *PS:* Even if you use the JS to show the data, Github's API must be called by the PHP (server side).
